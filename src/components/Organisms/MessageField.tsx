@@ -1,10 +1,11 @@
 import React, { ChangeEvent, useCallback } from "react";
 import flex from "styles/utility/flex.module.scss";
+import { SendButton, TextInput } from "../atoms";
 
 type Props = {
-  message: string
-  onChangeMessage: (message: string) => void
-  onClickSend: () => void
+  message: string;
+  onChangeMessage: (message: string) => void;
+  onClickSend: () => void;
 };
 
 const MessageField = ({ message, onChangeMessage, onClickSend }: Props) => {
