@@ -3,6 +3,7 @@ import { getMessage } from "../modules/SendModule/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { actionCreators } from "../modules/SendModule/actions";
 import MessageField from "../components/Organisms/MessageField";
+import { sendTweet } from "modules/SendModule/operations";
 
 export const SendContainer = () => {
   const dispatch = useDispatch();
@@ -14,6 +15,7 @@ export const SendContainer = () => {
       dispatch(actionCreators.changeMessage(message));
     },
     onClickSend: () => {
+      dispatch(sendTweet);
     }
   };
   return <MessageField {...props} />;

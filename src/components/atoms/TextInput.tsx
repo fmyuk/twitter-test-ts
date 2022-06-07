@@ -1,5 +1,5 @@
 import React, { ChangeEvent } from "react";
-import styles from "sytles/atoms/button.module.scss";
+import styles from "styles/atoms/button.module.scss";
 
 type Props = {
   value: string | number;
