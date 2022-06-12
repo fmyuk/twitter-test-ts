@@ -19,7 +19,7 @@ export const sendTweet = (): ThunkAction<
       access_token_secret: process.env.ACCESS_TOKEN_SECRET
     });
 
-    client.post('statuses/update', { status: state.message },
+    client.post('statuses/update', { status: state.send.message },
       function (error: Error, tweet: string, ) {
         console.log(tweet);
         if (error) {

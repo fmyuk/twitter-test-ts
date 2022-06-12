@@ -1,3 +1,3 @@
 import { StoreState } from "../../store/store";
 
-export const getMessage = (state: StoreState) => state;
+export const getMessage = (state: StoreState) => state.send;
